@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <title>Mobiscroll</title>
+
+    <!-- jQuery Include -->
+    <script src="jquery-1.9.1.js"></script>
+
+    <!-- Mobiscroll JS and CSS Includes -->
+    <script type="text/javascript" src="mobiscroll.unit.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="mobiscroll.unit.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <input id="sososo" placeholder="Please Select..." />
+    </div>
+</body>
+<script>
+    $(function () {
+        $('#sososo').mobiscroll().date({
+            theme: 'mobiscroll',
+            lang: 'zh',
+            display: 'bottom',
+            // max: max,
+            minDate: new Date(2015,12-1,28),  // More info about minDate: http://docs.mobiscroll.com/2-14-0/datetime#!opt-minDate
+            maxDate: new Date(2017,7-1,30)
+        });
+
+        // var now = new Date(),
+        // minDate = new Date(2012,3,10,9,22),
+        // maxDate = new Date(2014,7,30,15,44);
+
+        // $('#fuckyou').mobiscroll().date({
+        //     theme: 'mobiscroll',
+        //     lang: 'zh',
+        //     display: 'bottom',
+        //     min: minDate,
+        //     max: maxDate
+        // });
+    });
+</script>
+</html>
